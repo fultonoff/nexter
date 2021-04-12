@@ -7,20 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+
+   
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    
 
     <title>nexter &mdash; your home, your freedom</title>
 </head>
 
 <body class="container">
     <div class="sidebar">
-        Sidebar
+        <button class="nav-btn"></button>
     </div>
 
     <header class="header">
 
-        Header
+        <img src="./img/logo.png" alt="" class="header__logo">
+        <h3 class="heading-3">Your on home:</h3>
+        <h1 class="heading-1">The ultimate personal freedoom</h1>
+        <button class="btn header__btn">View all properties</button>
+        <div class="header__seenon-text">Seen on</div>
+
+        <div class="header__seenon-logos">
+            <img src="./img/logo-bbc.png" alt="Seen on logo 1">
+            <img src="./img/logo-forbes.png" alt="Seen on logo 2">
+            <img src="./img/logo-techcrunch.png" alt="Seen on logo 3">
+            <img src="./img/logo-bi.png" alt="Seen on logo 4">
+        </div>
 
     </header>
 
@@ -32,7 +49,7 @@
     <section class="features">
 
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-global"></use>
             </svg>
@@ -43,7 +60,7 @@
             </p>
         </div>
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-trophy"></use>
             </svg>
@@ -54,7 +71,7 @@
             </p>
         </div>
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
             </svg>
@@ -65,7 +82,7 @@
             </p>
         </div>
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-key"></use>
             </svg>
@@ -76,7 +93,7 @@
             </p>
         </div>
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-presentation"></use>
             </svg>
@@ -87,7 +104,7 @@
             </p>
         </div>
 
-        <div class="feature">
+        <div data-aos="fade-up" class="feature">
             <svg class="feature__icon">
                 <use xlink:href="./img/sprite.svg#icon-lock"></use>
             </svg>
@@ -102,14 +119,14 @@
 
 
         <!-- STORY IMG-->
-    <div class="story__picture">
+    <div data-aos="fade-right" class="story__picture">
         <img src="./img/story-1.jpeg" alt="Couple with new house" class="story__img--1">
         <img src="./img/story-2.jpeg" alt="new house" class="story__img--2">
     </div>
     <!-- STORY IMG-->
 
         <!-- STORY -->
-    <div class="story__content">
+    <div data-aos="fade-left" class="story__content">
         <h3 class="heading-3 mb-sm">Happy Customer</h3> 
         <h2 class="heading-2 headind-2--dark mb-md" >&ldquo; The best decision of our lives&rdquo;</h2>
 
@@ -124,7 +141,7 @@
 
     <!-- HOME    -->
     <section class="homes">
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-1.jpeg" alt="house 1" class="home__img">
 
             <svg class="home__like">
@@ -172,7 +189,7 @@
             <button class="btn home__btn">Contact realtor</button>
         </div>
 
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-2.jpeg" alt="house 2" class="home__img">
 
             <svg class="home__like">
@@ -220,7 +237,7 @@
             <button class="btn home__btn">Contact realtor</button>
         </div>
 
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-3.jpeg" alt="house 3" class="home__img">
 
             <svg class="home__like">
@@ -235,7 +252,7 @@
                     <use xlink:href="./img/sprite.svg#icon-map-pin"></use>
                 </svg>
 
-                <p>UK/p>
+                <p>UK</p>
             </div>
 
             <div class="home__rooms">
@@ -268,7 +285,7 @@
             <button class="btn home__btn">Contact realtor</button>
         </div>
 
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-4.jpeg" alt="house 4" class="home__img">
 
             <svg class="home__like">
@@ -316,7 +333,7 @@
             <button class="btn home__btn">Contact realtor</button>
         </div>
 
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-5.jpeg" alt="house 5" class="home__img">
 
             <svg class="home__like">
@@ -364,7 +381,7 @@
             <button class="btn home__btn">Contact realtor</button>
         </div>
 
-        <div class="home">
+        <div data-aos="flip-up" class="home">
             <img src="./img/house-6.jpeg" alt="house 6" class="home__img">
 
             <svg class="home__like">
@@ -416,14 +433,107 @@
     </section>
 <!-- HOME    -->
 
+    <!-- GALLERY -->
+    <section data-aos="fade-down"  class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <img src="./img/gal-1.jpeg" alt="Gallery image 2" class="gallery__img">
 
-    <section class="gallery">
-        Galery
+        </figure>
+
+        <figure class="gallery__item gallery__item--2">
+            <img src="./img/gal-2.jpeg" alt="Gallery image 2" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--3">
+            <img src="./img/gal-3.jpeg" alt="Gallery image 3" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--4">
+            <img src="./img/gal-4.jpeg" alt="Gallery image 4" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--5">
+            <img src="./img/gal-5.jpeg" alt="Gallery image 5" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--6">
+            <img src="./img/gal-6.jpeg" alt="Gallery image 6" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--7">
+            <img src="./img/gal-7.jpeg" alt="Gallery image 7" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--8">
+            <img src="./img/gal-8.jpeg" alt="Gallery image 8" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--9">
+            <img src="./img/gal-9.jpeg" alt="Gallery image 9" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--10">
+            <img src="./img/gal-10.jpeg" alt="Gallery image 10" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--11">
+            <img src="./img/gal-11.jpeg" alt="Gallery image 11" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--12">
+            <img src="./img/gal-12.jpeg" alt="Gallery image 12" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--13">
+            <img src="./img/gal-13.jpeg" alt="Gallery image 13" class="gallery__img">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--14">
+            <img src="./img/gal-14.jpeg" alt="Gallery image 14" class="gallery__img">
+
+        </figure>
+        
+        
+        
+        
     </section>
 
+    <!-- GALLERY -->
+
     <footer class="footer">
-        Footer
+        <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Download home planner</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Submit your property</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">come work with us!</a></li>
+        </ul>
+
+        <p class="copyright">
+            &copy; Copyright 2021 by Fulton Kilebe
+        </p>
     </footer>
+
+
+    
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JavaScript/main.js"></script>
+   
 </body>
 
 </html>
